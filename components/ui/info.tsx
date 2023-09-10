@@ -31,6 +31,12 @@ const Info : React.FC<InfoProps> = ({data}) => {
           <h3 className="font-semibold text-black">Color:</h3>
           <div className="h-6 w-6 rounded-full border border-gray-600" style={{backgroundColor: data?.color?.value}}/>
         </div>
+        
+        <div className="">
+          <h3 className="font-semibold text-black">Description:</h3>
+          <p>{data.description}</p>
+        </div>
+
       </div>
       <div className="mt-10 flex items-center gap-x-3">
         <Button className="flex items-center gap-x-2">
