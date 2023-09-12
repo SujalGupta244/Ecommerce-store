@@ -34,7 +34,7 @@ const ProductCard : React.FC<ProductCardProps> = ({data}) => {
   const addToCart :MouseEventHandler<HTMLButtonElement> = (e) =>{
     e.stopPropagation()
     cart.addItem(data)
-    console.log(cart.items)
+    // console.log(cart.items)
   }
 
   return (
